@@ -1,0 +1,447 @@
+/* =============================
+   Base styles
+   ============================= */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2937;
+    background-color: #f9fafb;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+}
+
+/* =============================
+   Header and navigation
+   ============================= */
+.site-header {
+    background-color: #111827;
+    color: white;
+    padding: 0;
+    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.16);
+}
+
+.legacy-page .navbar {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 24px;
+}
+
+.site-navbar .navbar-brand,
+.site-navbar .nav-link {
+    color: #f8fafc;
+}
+
+.site-navbar .navbar-brand:hover,
+.site-navbar .navbar-brand:focus,
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link:focus {
+    color: #facc15;
+}
+
+.site-navbar .nav-link {
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.legacy-page .brand h1 {
+    margin: 0;
+    line-height: 1.1;
+}
+
+.legacy-page .brand p {
+    margin: 8px 0 0;
+    color: #d1d5db;
+}
+
+.legacy-page .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.legacy-page .nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.legacy-page .nav-links a:hover,
+.legacy-page .nav-links a:focus {
+    color: #facc15;
+}
+
+/* =============================
+   Hero / About
+   ============================= */
+.legacy-page .hero {
+    max-width: 1100px;
+    margin: 32px auto 0;
+    padding: 72px 24px;
+    background: linear-gradient(135deg, #ffffff 0%, #eff6ff 100%);
+    border: 1px solid #dbeafe;
+    border-radius: 24px;
+    box-shadow: 0 18px 40px rgba(37, 99, 235, 0.08);
+}
+
+main > section[id] {
+    scroll-margin-top: 96px;
+}
+
+.hero-section {
+    max-width: 1320px;
+    margin: 32px auto 0;
+    border-radius: 24px;
+    box-shadow: 0 18px 40px rgba(37, 99, 235, 0.08);
+}
+
+.legacy-page .about-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.legacy-page .about-copy {
+    flex: 1;
+}
+
+.legacy-page .eyebrow {
+    margin: 0 0 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 12px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.legacy-page .profile-image {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12);
+    flex-shrink: 0;
+}
+
+.legacy-page .hero h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: clamp(2.4rem, 4vw, 3.5rem);
+    line-height: 1.1;
+}
+
+.legacy-page .hero p {
+    max-width: 680px;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.legacy-page .about-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.legacy-page .btn-secondary {
+    background-color: #e2e8f0;
+    color: #0f172a;
+}
+
+.legacy-page .btn-secondary:hover,
+.legacy-page .btn-secondary:focus {
+    background-color: #cbd5e1;
+}
+
+/* =============================
+   Reusable sections
+   ============================= */
+.legacy-page .section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 56px 24px;
+}
+
+.legacy-page .section-title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+/* =============================
+   Skills
+   ============================= */
+.legacy-page .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.legacy-page .skill-card {
+    flex: 1 1 220px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.legacy-page .skill-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* =============================
+   Project grid
+   ============================= */
+.legacy-page .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.legacy-page .project-card {
+    flex: 1 1 280px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.legacy-page .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.10);
+}
+
+.legacy-page .project-tag {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.legacy-page .project-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.legacy-page .project-card p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* =============================
+   Reusable button
+   ============================= */
+.legacy-page .btn {
+    display: inline-block;
+    border: none;
+    border-radius: 999px;
+    padding: 12px 20px;
+    background-color: #2563eb;
+    color: white;
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.legacy-page .btn:hover,
+.legacy-page .btn:focus {
+    background-color: #1d4ed8;
+    color: white;
+    transform: translateY(-1px);
+}
+
+.site-navbar .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.45);
+}
+
+.site-navbar .navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.35);
+}
+
+/* =============================
+   Contact form
+   ============================= */
+
+.legacy-page .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 640px;
+}
+
+.legacy-page .contact-form label {
+    font-weight: 600;
+}
+
+.legacy-page .contact-form input,
+.legacy-page .contact-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background-color: white;
+    font: inherit;
+}
+
+.legacy-page .contact-form input:focus,
+.legacy-page .contact-form textarea:focus {
+    outline: 3px solid rgba(37, 99, 235, 0.20);
+    border-color: #2563eb;
+}
+
+.legacy-page .contact-form .btn {
+    align-self: flex-start;
+}
+
+/* =============================
+   Footer
+   ============================= */
+.site-footer {
+    background-color: #111827;
+    color: white;
+    padding: 32px 24px;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 6px 0;
+}
+
+.site-footer a {
+    margin: 0 8px;
+    color: #facc15;
+    text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+    text-decoration: underline;
+}
+
+/* =============================
+   Responsive layout
+   ============================= */
+@media (max-width: 700px) {
+    .legacy-page .navbar {
+        padding: 14px 20px;
+    }
+
+    .legacy-page .nav-links {
+        gap: 12px;
+    }
+
+    .legacy-page .hero,
+    .legacy-page .section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .legacy-page .hero h2 {
+        font-size: 38px;
+    }
+
+    .legacy-page .hero p {
+        font-size: 18px;
+    }
+
+    .legacy-page .about-layout {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .legacy-page .about-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .legacy-page .profile-image {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .hero-section {
+        margin-top: 20px;
+        border-radius: 16px;
+    }
+}
+
+/* Bootstrap page refinements */
+.bootstrap-page {
+    background-color: #f8fafc;
+}
+
+.bootstrap-page .section-space {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.bootstrap-page .section-heading h2,
+.bootstrap-page .section-band h2,
+.bootstrap-page #contact h2 {
+    color: #1f2937;
+    letter-spacing: 0;
+}
+
+.bootstrap-page .section-kicker {
+    color: #2563eb;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.bootstrap-page .hero-section {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+
+.bootstrap-page .hero-section h1 {
+    color: #111827;
+    letter-spacing: 0;
+}
+
+@media (max-width: 991.98px) {
+    .bootstrap-page .navbar-collapse {
+        padding-top: 0.75rem;
+    }
+
+    .bootstrap-page .nav-link {
+        padding: 0.6rem 0;
+    }
+}
