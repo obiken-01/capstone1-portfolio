@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-A responsive personal portfolio website by **Natassha Cua**, built as part of the MST Connect PH Full-Stack Web Development Bootcamp. The site introduces me as an aspiring full-stack web developer and showcases my current skills, projects, contact information, and professional links.
+A responsive personal portfolio website by **Ralph Armand Alcaide**, built as part of the MST Connect PH Full-Stack Web Development Bootcamp. The site introduces me as an aspiring full-stack web developer and showcases my current skills, projects, contact information, and professional links.
 
 ## Live Demo
 
@@ -41,7 +41,7 @@ A responsive personal portfolio website by **Natassha Cua**, built as part of th
 ## Portfolio Sections
 
 ### Home / Hero
-Introduces **Natassha Cua** as an aspiring full-stack web developer and includes buttons for viewing projects and visiting GitHub.
+Introduces **Ralph Armand Alcaide** as an aspiring full-stack web developer and includes buttons for viewing projects and visiting GitHub.
 
 ### About
 Provides a short introduction about current learning goals, front-end development skills, and plans to continue growing the portfolio.
@@ -147,7 +147,7 @@ Replace the following placeholders:
 
 ## Author
 
-**Natassha Cua**  
+**Ralph Armand Alcaide**  
 Aspiring Full-Stack Web Developer
 
 ### Professional Links
